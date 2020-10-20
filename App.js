@@ -5,13 +5,14 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={{color: '#888', fontSize: 18}}>Hello world!</Text>
+      <Text style={{color: 'olive', fontSize: 18}}>Hello world!</Text>
+      <br></br>
       <StatusBar style="auto" />
     
     <TouchableOpacity
-    onPress={() => alert('Hello, world!')}
-    style={{ backgroundColor: 'blue' }}>
-    <Text style={{ fontSize: 20, color: '#fff' }}>Pick a photo</Text>
+    onPress={() => alert('Added!')}
+    style={{ backgroundColor: 'olive' }}>
+    <Text style={{ fontSize: 16, color: 'white' }}> Add Assignment </Text>
     </TouchableOpacity>
     
     </View>
@@ -23,7 +24,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'khaki',
     alignItems: 'center',
     justifyContent: 'center',
   },
