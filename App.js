@@ -29,7 +29,7 @@ const App = () => {
     <View style={styles.container}>
       <View>
         <Text style={styles.textStyle}>StatusBar Style: {styleStatusBar}</Text>
-        <Text style={styles.textStyle}>StatusBar Visibility: {!visibleStatusBar ? 'Visible?': 'Hidden'}</Text>
+        <Text style={styles.textStyle}>StatusBar Visibility: {!visibleStatusBar ? 'Visible': 'Hidden'}</Text>
       </View>
       <StatusBar backgroundColor="Ivory" barStyle={styleStatusBar} />
       <View>
@@ -44,9 +44,10 @@ const App = () => {
 
     <View style={styles.container}>
       <Switch title="On/Off Switch"
+        textAlign="center"
         trackColor={{ false: "#851625", true: "#F3EF15" }}
         thumbColor={isEnabled ? "#FABD15" : "#f3EF15"}
-        ios_backgroundColor="ivory"
+        ios_backgroundColor="#c2212B"
         onValueChange={toggleSwitch}
         value={isEnabled}
       />
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
 
   textStyle:{
     textAlign: 'center'
-    
+
   }
 });
 
