@@ -31,7 +31,7 @@ const App = () => {
         <Text style={styles.textStyle}>StatusBar Style: {styleStatusBar}</Text>
         <Text style={styles.textStyle}>StatusBar Visibility: {!visibleStatusBar ? 'Visible?': 'Hidden'}</Text>
       </View>
-      <StatusBar backgroundColor="#FABD15" barStyle={styleStatusBar} />
+      <StatusBar backgroundColor="Ivory" barStyle={styleStatusBar} />
       <View>
         <StatusBar hidden={visibleStatusBar} />
       </View>
@@ -46,7 +46,7 @@ const App = () => {
       <Switch title="On/Off Switch"
         trackColor={{ false: "#851625", true: "#F3EF15" }}
         thumbColor={isEnabled ? "#FABD15" : "#f3EF15"}
-        ios_backgroundColor="#olive"
+        ios_backgroundColor="ivory"
         onValueChange={toggleSwitch}
         value={isEnabled}
       />
@@ -61,15 +61,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: 'olive',
+    backgroundColor: 'aqua',
     color: 'ivory',
     padding: 3
   },
   buttonContainer:{
     padding: 7
   },
+
   textStyle:{
     textAlign: 'center'
+    
   }
 });
 
